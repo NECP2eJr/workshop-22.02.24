@@ -26,6 +26,9 @@
 
     .header-container {
       padding: 12px 80px;
+      width: 90%;
+      position: fixed;
+      background-color: #fff;
     }
 
     .header-container > div {
@@ -45,6 +48,11 @@
       display: flex;
       gap: 24px;
       align-items: center;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
 
       div {
         height: 24px;
@@ -79,6 +87,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0px 0px 20px 80px;
+      padding-top: 60px;
     }
 
     .hero-container > div {
@@ -302,9 +311,15 @@
     <div>
       <span>&lt;Galisse /&gt;</span>
       <div>
-        <span>Sobre mim</span>
-        <span>Projetos</span>
-        <span>Contato</span>
+        <a href="#about">
+          <span>Sobre mim</span>
+        </a>
+        <a href="#projects">
+          <span>Projetos</span>
+        </a>
+        <a href="#footer">
+          <span>Contato</span>
+        </a>
         <div></div>
         <a href="./assets/Curriculo_Luan.pdf" download="Curriculo_Luan.pdf">
           <button>Baixar CV</button>
@@ -330,7 +345,7 @@
     </div>
     <img src="./assets/hero-image.jpg" alt="Imagem de Leonardo Galisse" />
   </div>
-  <div class="about-container">
+  <div class="about-container" id="about">
     <div>
       <div>
         <span>Sobre mim</span>
@@ -350,7 +365,7 @@
       </div>
     </div>
   </div>
-  <div class="project-container">
+  <div class="project-container" id="projects">
     <div>
       <span>Projetos</span>
       <div></div>
@@ -392,7 +407,7 @@
       </div>
     </div>
   </div>
-  <div class="footer-container">
+  <div class="footer-container" id="footer">
     <div>
       <div>
         <div>
